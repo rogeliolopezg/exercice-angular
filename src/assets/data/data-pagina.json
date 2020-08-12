@@ -1,6 +1,10 @@
 {
     "titulo": "Rogelio Lopez",
-    "email": "toto@tata.com",
-    "nombre_corto": "Rogelio"
-
+    "email": "https://mail.google.com/",
+    "nombre_corto": "Rogelio",
+    "facebook": "https://facebook.com",
+    "instagram": "https://instagram.com",
+    "twiter": "https://twiter.com",
+    "tumblr": "https://www.tumblr.com/",
+    "equipo_trabajo": []
 }
