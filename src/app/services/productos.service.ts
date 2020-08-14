@@ -10,7 +10,6 @@ export class ProductosService {
 
   cargando = true;
   productos: Producto[] = [];
-  
 
 
   constructor( private http: HttpClient) {
@@ -20,9 +19,18 @@ export class ProductosService {
    private cargarProductos(){
      this.http.get('https://angular-portafolio-5eb4a.firebaseio.com/productos_idx.json')
      .subscribe((res: Producto[]) => {
-       console.log(res);
+       // console.log(res);
        this.productos = res;
        this.cargando = false;
      });
    }
+
+  getProducto ( id: string ){
+    
+    return this.http.get(`https://angular-portafolio-5eb4a.firebaseio.com/productos/${ id }.json`);
+    
+
+  }
+
+
 }
